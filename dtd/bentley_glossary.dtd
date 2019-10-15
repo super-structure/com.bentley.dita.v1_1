@@ -1,0 +1,190 @@
+<!-- ============================================================= -->
+<!--                    HEADER                                     -->
+<!-- ============================================================= -->
+<!--  MODULE:    DITA Glossary DTD                                 -->
+<!--  VERSION:   1.1                                               -->
+<!--  DATE:      November 2006                                     -->
+<!--                                                               -->
+<!-- ============================================================= -->
+
+<!-- ============================================================= -->
+<!--                    PUBLIC DOCUMENT TYPE DEFINITION            -->
+<!--                    TYPICAL INVOCATION                         -->
+<!--                                                               -->
+<!--  Refer to this file by the following public identifier or an 
+      appropriate system identifier 
+PUBLIC "-//BENTLEY//DTD DITA 1.1 Glossary//EN"                     -->
+
+<!-- ============================================================= -->
+<!-- SYSTEM:     Darwin Information Typing Architecture (DITA)     -->
+<!--                                                               -->
+<!-- PURPOSE:    DTD to describe DITA Glossary topics              -->
+<!--                                                               -->
+<!-- ORIGINAL CREATION DATE:                                       -->
+<!--             June 2006                                         -->
+<!--                                                               -->
+<!--             (C) Copyright OASIS Open 2006.                    -->
+<!--             All Rights Reserved.                              -->
+<!--                                                               -->
+<!--  UPDATES:                                                     -->
+<!-- ============================================================= -->
+
+
+<!-- ============================================================= -->
+<!--                    DOMAIN ENTITY DECLARATIONS                 -->
+<!-- ============================================================= -->
+
+
+<!ENTITY % ui-d-dec     PUBLIC 
+"-//BENTLEY//ENTITIES DITA 1.1 User Interface Domain//EN" 
+"bentley_uiDomain.ent"                                               >
+%ui-d-dec;
+
+<!-- JTC: Remove Highlighting domain -->
+<!-- ENTITY % hi-d-dec     PUBLIC 
+"-//BENTLEY//ENTITIES DITA 1.1 Highlight Domain//EN" 
+"bentley_highlightDomain.ent"                                        >
+%hi-d-dec; -->
+
+<!ENTITY % pr-d-dec     PUBLIC 
+"-//BENTLEY//ENTITIES DITA 1.1 Programming Domain//EN" 
+"bentley_programmingDomain.ent"                                      >
+%pr-d-dec;
+<!-- JTC: End -->
+
+<!ENTITY % sw-d-dec     PUBLIC 
+"-//OASIS//ENTITIES DITA 1.1 Software Domain//EN" 
+"../../org.dita.specialization.dita11/dtd/softwareDomain.ent"        >
+%sw-d-dec;
+
+<!ENTITY % ut-d-dec     PUBLIC 
+"-//OASIS//ENTITIES DITA 1.1 Utilities Domain//EN" 
+"../../org.dita.specialization.dita11/dtd/utilitiesDomain.ent"       >
+%ut-d-dec;
+
+<!ENTITY % indexing-d-dec     PUBLIC 
+"-//OASIS//ENTITIES DITA 1.1 Indexing Domain//EN" 
+"../../org.dita.specialization.dita11/dtd/indexingDomain.ent"        >
+%indexing-d-dec;
+
+<!-- ============================================================= -->
+<!--                    DOMAIN ATTRIBUTE DECLARATIONS              -->
+<!-- ============================================================= -->
+
+
+<!-- ============================================================= -->
+<!--                    DOMAIN EXTENSIONS                          -->
+<!-- ============================================================= -->
+<!--                    One for each extended base element, with
+                        the name of the domain(s) in which the
+                        extension was declared                     -->
+
+<!ENTITY % pre          "pre     | %pr-d-pre;     | %sw-d-pre;"      >
+<!-- ENTITY % pre          "pre     | %pr-d-pre;     | %sw-d-pre;     | 
+                                   %ui-d-pre;"                     -->
+<!ENTITY % keyword      "keyword | %pr-d-keyword; | %sw-d-keyword;"  >	
+<!-- ENTITY % keyword      "keyword | %pr-d-keyword; | %sw-d-keyword; |
+                                   %ui-d-keyword;"                 -->
+<!ENTITY % ph           "ph      | %pr-d-ph;      | %sw-d-ph;      | 
+                                    %ui-d-ph;"                       >
+<!-- ENTITY % ph           "ph      | %pr-d-ph;      | %sw-d-ph;      | 
+                                    %hi-d-ph;     | %ui-d-ph;"     -->
+<!ENTITY % fig          "fig     | %pr-d-fig;     | %ut-d-fig;"      >
+<!ENTITY % dl           "dl      | %pr-d-dl;"                        >
+<!ENTITY % index-base   "index-base | %indexing-d-index-base;"       >
+
+<!-- ============================================================= -->
+<!--                    DOMAIN ATTRIBUTE EXTENSIONS                -->
+<!-- ============================================================= -->
+<!ENTITY % props-attribute-extensions  ""                            >
+<!ENTITY % base-attribute-extensions   ""                            >
+
+
+<!-- ============================================================= -->
+<!--                    TOPIC NESTING OVERRIDE                     -->
+<!-- ============================================================= -->
+
+<!--                    Redefine the infotype entity to exclude 
+                        other topic types and disallow nesting     -->
+<!ENTITY % glossentry-info-types 
+                        "no-topic-nesting"                           >
+
+
+<!-- ============================================================= -->
+<!--                    DOMAINS ATTRIBUTE OVERRIDE                 -->
+<!-- ============================================================= -->
+<!--                    Must be declared ahead of the DTDs, which
+                        puts @domains first in order               -->
+
+<!-- ENTITY included-domains 
+                        "&ui-d-att; &hi-d-att; &pr-d-att; &sw-d-att;
+                         &ut-d-att; &indexing-d-att;"              -->
+<!ENTITY included-domains 
+                        "&ui-d-att; &pr-d-att; &sw-d-att;
+                         &ut-d-att; &indexing-d-att;"                >
+
+
+<!-- ============================================================= -->
+<!--                    TOPIC ELEMENT INTEGRATION                  -->
+<!-- ============================================================= -->
+
+<!--                    Embed topic to get generic elements        -->
+<!ENTITY % topic-type   PUBLIC 
+"-//OASIS//ELEMENTS DITA Topic//EN" 
+"../../org.dita.specialization.dita11/dtd/topic.mod"                 >
+%topic-type;
+
+
+<!--                    Embed concept to get specific elements     -->
+<!ENTITY % concept-typemod 
+                        PUBLIC 
+"-//OASIS//ELEMENTS DITA Concept//EN" 
+"../../org.dita.specialization.dita11/dtd/concept.mod"               >                                                     
+%concept-typemod;
+
+<!--                    Embed glossary to get specific elements    -->
+<!ENTITY % glossary-typemod 
+                        PUBLIC 
+"-//OASIS//ELEMENTS DITA 1.1 Glossary//EN" 
+"../../org.dita.specialization.dita11/dtd/glossary.mod"              >                                                     
+%glossary-typemod;
+
+
+<!-- ============================================================= -->
+<!--                    DOMAIN ELEMENT INTEGRATION                 -->
+<!-- ============================================================= -->
+
+
+<!ENTITY % ui-d-def     PUBLIC 
+"-//BENTLEY//ELEMENTS DITA 1.1 User Interface Domain//EN" 
+"bentley_uiDomain.mod"                                               >
+%ui-d-def;
+
+<!-- JTC: Remove Highlighting domain -->
+<!-- ENTITY % hi-d-def     PUBLIC 
+"-//BENTLEY//ELEMENTS DITA 1.1 Highlight Domain//EN" 
+"bentley_highlightDomain.mod"                                        >
+%hi-d-def; -->
+
+<!ENTITY % pr-d-def     PUBLIC 
+"-//BENTLEY//ELEMENTS DITA 1.1 Programming Domain//EN" 
+"bentley_programmingDomain.mod"                                      >
+%pr-d-def;
+<!-- JTC: End -->
+
+<!ENTITY % sw-d-def     PUBLIC 
+"-//OASIS//ELEMENTS DITA 1.1 Software Domain//EN" 
+"../../org.dita.specialization.dita11/dtd/softwareDomain.mod"        >
+%sw-d-def;
+
+<!ENTITY % ut-d-def     PUBLIC 
+"-//OASIS//ELEMENTS DITA 1.1 Utilities Domain//EN" 
+"../../org.dita.specialization.dita11/dtd/utilitiesDomain.mod"       >
+%ut-d-def;
+
+<!ENTITY % indexing-d-def     PUBLIC 
+"-//OASIS//ELEMENTS DITA 1.1 Indexing Domain//EN"
+"../../org.dita.specialization.dita11/dtd/indexingDomain.mod"        >
+%indexing-d-def;
+
+<!-- ================== End DITA Glossary DTD  =================== -->

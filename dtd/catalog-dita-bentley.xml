@@ -1,0 +1,42 @@
+<?xml version="1.0"?>
+<catalog xmlns="urn:oasis:names:tc:entity:xmlns:xml:catalog" prefer="public">
+  <!-- ...................................................................... -->
+  <!-- IN THIS OASIS XML CATALOG:                                             -->
+  <!--   [A] XML Catalog data for BENTLEY customizations to OASIS DITA V1.1   -->
+  <!-- GENERAL NOTES:                                                         -->
+  <!-- 																		  -->
+  <!-- HISTORY:                                                               -->
+  <!--   20111221/JTC Added Bentley IDs                                       -->
+  <!--   2019-10-08 JTC: All Benltey topics were re-built as shells, with     -->
+  <!--                   only customized domains included here.               -->
+  <!-- ...................................................................... -->
+	<!-- ...................................................................... -->
+	<!-- [A] XML Catalog data for BENTLEY customizations to OASIS DITA V1.1     -->	
+	<!-- DITA Topics -->
+	<public publicId="-//BENTLEY//DTD DITA 1.1 Composite//EN" uri="bentley_ditabase.dtd"/>
+	<public publicId="-//BENTLEY//DTD DITA 1.1 Concept//EN" uri="bentley_concept.dtd"/>
+	<public publicId="-//BENTLEY//DTD DITA 1.1 Glossary//EN" uri="bentley_glossary.dtd"/>
+	<public publicId="-//BENTLEY//DTD DITA 1.1 Reference//EN" uri="bentley_reference.dtd"/>
+	<public publicId="-//BENTLEY//DTD DITA 1.1 Task//EN" uri="bentley_task.dtd"/>
+	<public publicId="-//BENTLEY//DTD DITA 1.1 Topic//EN" uri="bentley_topic.dtd"/>
+	
+	<!-- DITA Maps -->
+	<public publicId="-//BENTLEY//DTD DITA 1.1 Map//EN" uri="bentley_map.dtd"/>
+	<public publicId="-//BENTLEY//DTD DITA 1.1 BookMap//EN" uri="bentley_bookmap.dtd"/>
+	
+	<!-- DITA Domains -->
+	<public publicId="-//BENTLEY//ELEMENTS DITA 1.1 Programming Domain//EN" uri="bentley_programmingDomain.mod"/>
+	<public publicId="-//BENTLEY//ENTITIES DITA 1.1 Programming Domain//EN" uri="bentley_programmingDomain.ent"/>
+	<public publicId="-//BENTLEY//ELEMENTS DITA 1.1 User Interface Domain//EN" uri="bentley_uiDomain.mod"/>
+	<public publicId="-//BENTLEY//ENTITIES DITA 1.1 User Interface Domain//EN" uri="bentley_uiDomain.ent"/>
+	<public publicId="-//BENTLEY//ELEMENTS DITA 1.1 Math Domain//EN" uri="bentley_mathDomain.mod"/>
+	<public publicId="-//BENTLEY//ENTITIES DITA 1.1 Math Domain//EN" uri="bentley_mathDomain.ent"/>
+	<public publicId="-//BENTLEY//ELEMENTS DITA 1.1 Rhetoric Domain//EN" uri="bentley_rhetoricDomain.mod"/>
+	<public publicId="-//BENTLEY//ENTITIES DITA 1.1 Rhetoric Domain//EN" uri="bentley_rhetoricDomain.ent"/>
+	
+	<!-- End of XML Catalog data for BENTLEY customizations to OASIS DITA V1.1 -->	
+	
+	<!-- JTC: The learning topics were moved to a separate catalog, which is no 
+		longer linked as these were never used by Bentley -->
+	<!--<nextCatalog catalog="learning/catalog.xml"/>-->
+</catalog>

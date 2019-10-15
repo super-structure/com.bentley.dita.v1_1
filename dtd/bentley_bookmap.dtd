@@ -1,0 +1,119 @@
+<!-- ============================================================= -->
+<!--                    HEADER                                     -->
+<!-- ============================================================= -->
+<!--  MODULE:    DITA Bookmap DTD                                  -->
+<!--  VERSION:   1.1                                               -->
+<!--  DATE:      December 2011                                     -->
+<!--                                                               -->
+<!-- ============================================================= -->
+
+<!-- ============================================================= -->
+<!--                    PUBLIC DOCUMENT TYPE DEFINITION            -->
+<!--                    TYPICAL INVOCATION                         -->
+<!--                                                               -->
+<!--  Refer to this file by the following public identifier or an 
+      appropriate system identifier 
+PUBLIC "-//BENTLEY//DTD DITA 1.1 BookMap//EN"                      -->
+
+<!-- ============================================================= -->
+<!-- SYSTEM:     Darwin Information Typing Architecture (DITA)     -->
+<!--                                                               -->
+<!-- PURPOSE:    DTD to describe DITA Book Maps                    -->
+<!--                                                               -->
+<!-- ORIGINAL CREATION DATE:                                       -->
+<!--             March 2004                                        -->
+<!--                                                               -->
+<!--             (C) Copyright OASIS Open 2006.                    -->
+<!--             (C) Copyright IBM Corporation 2004, 2005.         -->
+<!--             All Rights Reserved.                              -->
+<!--                                                               -->
+<!--  UPDATES:                                                     -->
+<!-- ============================================================= -->
+
+<!-- ============================================================= -->
+<!--                    DOMAIN ENTITY DECLARATIONS                 -->
+<!-- ============================================================= -->
+
+
+<!ENTITY % mapgroup-d-dec 
+                        PUBLIC 
+"-//OASIS//ENTITIES DITA 1.1 Map Group Domain//EN" 
+"../../org.dita.specialization.dita11/dtd/mapGroup.ent"              >
+%mapgroup-d-dec;
+
+<!ENTITY % indexing-d-dec     PUBLIC 
+"-//OASIS//ENTITIES DITA 1.1 Indexing Domain//EN" 
+"../../org.dita.specialization.dita11/dtd/indexingDomain.ent"        >
+%indexing-d-dec;
+
+<!ENTITY % xnaldomain-d-dec 
+                        PUBLIC 
+"-//OASIS//ENTITIES DITA 1.1 XNAL Domain//EN" 
+"../../org.dita.specialization.dita11/dtd/xnalDomain.ent"            >
+%xnaldomain-d-dec;
+
+<!-- ============================================================= -->
+<!--                    DOMAIN ATTRIBUTE DECLARATIONS              -->
+<!-- ============================================================= -->
+
+
+<!-- ============================================================= -->
+<!--                    DOMAIN EXTENSIONS                          -->
+<!-- ============================================================= -->
+<!--                    One for each extended base element, with
+                        the name of the domain(s) in which the
+                        extension was declared                     -->
+<!ENTITY % author       "author | %xnal-d-author;"                   >
+<!ENTITY % topicref     "topicref | %mapgroup-d-topicref;"           >
+<!ENTITY % index-base   "index-base | %indexing-d-index-base;"       >
+
+<!-- ============================================================= -->
+<!--                    DOMAIN ATTRIBUTE EXTENSIONS                -->
+<!-- ============================================================= -->
+<!ENTITY % props-attribute-extensions  ""                            >
+<!ENTITY % base-attribute-extensions   ""                            >
+
+<!-- ============================================================= -->
+<!--                    DOMAINS ATTRIBUTE OVERRIDE                 -->
+<!-- ============================================================= -->
+<!--                    Must be declared ahead of the DTDs, which
+                        puts @domains first in order               -->
+<!ENTITY included-domains "&mapgroup-d-att; &indexing-d-att; 
+                           &xnal-d-att;"                             >
+
+<!-- ============================================================= -->
+<!--                    MAP ELEMENT INTEGRATION                    -->
+<!-- ============================================================= -->
+
+<!ENTITY % map-type     PUBLIC 
+"-//OASIS//ELEMENTS DITA 1.1 Map//EN" 
+"../../org.dita.specialization.dita11/dtd/map.mod"                   >
+%map-type;
+
+<!ENTITY % bookmap-type PUBLIC 
+"-//OASIS//ELEMENTS DITA 1.1 BookMap//EN" 
+"../../org.dita.specialization.dita11/dtd/bookmap.mod"               >
+%bookmap-type;
+
+<!-- ============================================================= -->
+<!--                    DOMAIN ELEMENT INTEGRATION                 -->
+<!-- ============================================================= -->
+
+<!ENTITY % mapgroup-d-def  
+                        PUBLIC 
+"-//OASIS//ELEMENTS DITA 1.1 Map Group Domain//EN" 
+"../../org.dita.specialization.dita11/dtd/mapGroup.mod"              >
+%mapgroup-d-def;
+
+<!ENTITY % indexing-d-def     PUBLIC 
+"-//OASIS//ELEMENTS DITA 1.1 Indexing Domain//EN" 
+"../../org.dita.specialization.dita11/dtd/indexingDomain.mod"        >
+%indexing-d-def;
+
+<!ENTITY % xnaldomain-d-def  
+                        PUBLIC 
+"-//OASIS//ELEMENTS DITA 1.1 XNAL Domain//EN" 
+"../../org.dita.specialization.dita11/dtd/xnalDomain.mod"            >
+%xnaldomain-d-def;
+
+<!-- ================== End DITA Bookmap DTD  ==================== -->

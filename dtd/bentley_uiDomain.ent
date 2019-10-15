@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- ============================================================= -->
+<!--                    HEADER                                     -->
+<!-- ============================================================= -->
+<!--  MODULE:    DITA User Interface Domain Entities               -->
+<!--  VERSION:   1.1                                               -->
+<!--  DATE:      November 2011                                     -->
+<!--                                                               -->
+<!-- ============================================================= -->
+
+<!-- ============================================================= -->
+<!--                    PUBLIC DOCUMENT TYPE DEFINITION            -->
+<!--                    TYPICAL INVOCATION                         -->
+<!--                                                               -->
+<!--  Refer to this file by the following public identifier or an 
+      appropriate system identifier 
+PUBLIC "-//BENTLEY//ENTITIES DITA 1.1 User Interface Domain//EN"
+      Delivered as file "bentley_uiDomain.ent"                             -->
+
+<!-- ============================================================= -->
+<!-- SYSTEM:     Darwin Information Typing Architecture (DITA)     -->
+<!--                                                               -->
+<!-- PURPOSE:    Declaring the substitution context and domain     -->
+<!--             entity declarations for the User Interface Domain -->
+<!--                                                               -->
+<!-- ORIGINAL CREATION DATE:                                       -->
+<!--             March 2001                                        -->
+<!--                                                               -->
+<!--             (C) Copyright OASIS Open 2005, 2006.              -->
+<!--             (C) Copyright IBM Corporation 2001, 2004.         -->
+<!--             All Rights Reserved.                              -->
+<!--             (C) Copyright Bentley Systems, Incorporated 2011. -->
+<!--             All Rights Reserved.                              -->
+<!--                                                               -->
+<!--  UPDATES:                                                     -->
+<!--    2005.11.15 RDA: Updated these comments to match template   -->
+<!--    2005.11.15 RDA: Corrected the "Delivered as" system ID     -->
+<!--    2011.10.15 JTC: Made Bentley customizations and            -->
+<!--    				specializations							   -->
+<!-- ============================================================= -->
+
+<!-- ============================================================= -->
+<!--                    ELEMENT EXTENSION ENTITY DECLARATIONS      -->
+<!-- ============================================================= -->
+
+<!-- The following entities are not used in the Bentley Configuration
+for the UI Domain: -->
+<!-- ENTITY % ui-d-keyword 		"wintitle"						   -->
+<!-- ENTITY % ui-d-pre   	"screen"							   -->
+<!-- ENTITY % ui-d-ph   	"shortcut"							   -->
+
+<!ENTITY % ui-d-ph		"menucascade | uicontrol | kbd"				 >
+
+
+<!-- ============================================================= -->
+<!--                    DOMAIN ENTITY DECLARATION                  -->
+<!-- ============================================================= -->
+
+
+<!ENTITY ui-d-att "(topic ui-d)">
+
+
+<!-- ================== End User Interface Domain Entities ======= -->
