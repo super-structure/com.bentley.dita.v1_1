@@ -7,3 +7,6 @@ This plug-in contains DTDs for backwards comparability for any DITA v1.1 topics 
 
 ## To do
 Refer to the [GitHub repository Issues list](https://github.com/super-structure/com.bentley.dita.v1_1/issues).
+
+## Copyright
+Copyright (c) Bentley Systems, Incorporated. All rights reserved.

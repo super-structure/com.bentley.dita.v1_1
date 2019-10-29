@@ -25,6 +25,8 @@ PUBLIC "-//BENTLEY//ENTITIES DITA 1.1 Metadata//EN"
 <!-- ORIGINAL CREATION DATE:                                       -->
 <!--             March 2001                                        -->
 <!--                                                               -->
+<!--             Copyright (c) Bentley Systems, Incorporated.      -->
+<!--             All rights reserved.                              -->
 <!--             (C) Copyright OASIS Open 2005, 2006.              -->
 <!--             (C) Copyright IBM Corporation 2001, 2004.         -->
 <!--             All Rights Reserved.                              -->

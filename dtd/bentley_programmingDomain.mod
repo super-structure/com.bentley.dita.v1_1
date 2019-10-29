@@ -25,10 +25,10 @@ PUBLIC "-//BENTLEY//ELEMENTS DITA 1.1 Programming Domain//EN"
 <!-- ORIGINAL CREATION DATE:                                       -->
 <!--             March 2001                                        -->
 <!--                                                               -->
+<!--             Copyright (c) Bentley Systems, Incorporated.      -->
+<!--             All rights reserved.                              -->
 <!--             (C) Copyright OASIS Open 2005, 2006.              -->
 <!--             (C) Copyright IBM Corporation 2001, 2004.         -->
-<!--             All Rights Reserved.                              -->
-<!--             (C) Copyright Bentley Systems, Incorporated 2011. -->
 <!--             All Rights Reserved.                              -->
 <!--                                                               -->
 <!--  UPDATES:                                                     -->
